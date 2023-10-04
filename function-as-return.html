@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myMethod(x){
+            console.log('Parameter with:',x);
+        }
+        function hisMethod(){
+            return myMethod;
+        }
+        var myFun = hisMethod();
+        myFun('Life is beautiful!');
+    </script>
+</body>
+</html>

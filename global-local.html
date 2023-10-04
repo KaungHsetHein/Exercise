@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name='John Doe';
+        hobby="Reading";
+        function doSomething(){
+            age=23;
+            console.log('Name:',this.name);
+            console.log('Hobby',this.hobby);
+
+        }
+        doSomething();
+        console.log('Age:',this.age);
+    </script>
+</body>
+</html>

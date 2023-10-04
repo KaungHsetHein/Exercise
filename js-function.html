@@ -1,0 +1,51 @@
+'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function doSomething(s){
+            console.log(s);
+        }
+        var myFun1 = doSomething;
+        myFun1('Life is beautiful!');
+
+        function doAnother(a){
+            a('Live depend on KO KO Naing')
+        }
+        doAnother(doSomething);
+        var myFun2 = myFun1;
+        myFun2('Ko Ko naing is never cry and ever fine')
+
+        function doSomething2(){
+            return "Hello Ko Ko Naing";
+
+        }
+        console.log(doSomething2())
+        var myFun3 =  doSomething2;
+        var result = myFun3();
+        console.log(result)
+
+        var myFun4 = function(sth){
+            console.log(sth);
+        }
+        myFun4('Ko Ko Naing is a GOAT')
+
+        var myFun5 = a =>{
+            console.log(a);
+        }
+        myFun5('May the force be with you!');
+        var Fun6 = (num1,num2)=> {
+            return num1+num2;
+        }
+        console.log('Result:',Fun6(5,7))
+
+        var myFun7 = new Function("x","y","return x+y;")
+        console.log("Add:",myFun7(6,7))
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nums = [1,2,3];
+
+        function doSomething(num){
+        for(var i in num){
+            num[i] =num[i] + 100;
+        }
+        }
+        doSomething(nums);
+        nums.forEach(d=> console.log(d));
+    </script>
+</body>
+</html>

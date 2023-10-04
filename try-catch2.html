@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = prompt('Enter number between 5 and 10');
+        try {
+            if(num <5){
+                throw "Err1";
+            }
+            else if(num >10){
+                throw "Err2";
+            }
+            else if(isNaN(num)){
+                throw "Err3";
+            }
+            else{
+                document.write("you entered ::"+ num);
+            }
+            
+        } catch (err) {
+            if(err== "Err1"){
+                document.write(num + "is less than 5:");
+            }
+            if(err == "Err2"){
+                document.write(num +" is greater than 10");
+            }
+            if(err == "Err3"){
+                document.write(num + "is not number")
+            }
+            
+        }
+    </script>
+</body>
+</html>
